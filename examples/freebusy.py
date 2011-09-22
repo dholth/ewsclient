@@ -11,7 +11,7 @@ import suds.client
 import logging
 from suds.transport.https import WindowsHttpAuthenticated
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.DEBUG)
 
 email = sys.argv[1]
 
@@ -45,7 +45,7 @@ md = client.factory.create('MailboxDataArray')
 
 mde = client.factory.create('t:MailboxData')
 mde.Email.Address = email
-mde.AttendeeType = 'optional'
+mde.AttendeeType = 'Room'
 mde.ExcludeConflicts = 'false'
 md.MailboxData.append(mde)
 
