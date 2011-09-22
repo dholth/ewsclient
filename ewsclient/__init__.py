@@ -18,7 +18,7 @@ class AddService(suds.plugin.DocumentPlugin):
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>''' % service_url
-        ctx.document = context.document.replace('</wsdl:definitions>', servicexml)
+        ctx.document = ctx.document.replace('</wsdl:definitions>', servicexml)
         return ctx
 
 # Otherwise suds will try, and often fail, to download this document.
