@@ -7,7 +7,7 @@ setup(name='ewsclient',
       version=version,
       description="Client for Microsoft Exchange Web Services",
       long_description="""\
-Minimal client for accessing Exchange web services through suds.""",
+Minimal hacks to access Exchange web services through suds.""",
       classifiers=[], # Get strings from http://pypi.python.org/pypi?%3Aaction=list_classifiers
       keywords='',
       author='Daniel Holth',

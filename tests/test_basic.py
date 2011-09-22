@@ -10,7 +10,6 @@ def test_basic():
 
     transport = WindowsHttpAuthenticated(username=username,
             password=password)
-    import pudb; pudb.set_trace()
     client = suds.client.Client("https://%s/EWS/Services.wsdl" % domain,
             transport=transport,
             plugins=[ewsclient.AddService()])
