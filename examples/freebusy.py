@@ -4,6 +4,7 @@ Fetch free/busy information.
 """
 
 import ewsclient
+import ewsclient.monkey
 import datetime
 import os
 import sys
